@@ -4,6 +4,28 @@
         <h2>{{ title }}</h2>
         <p>{{ description }}</p>
         <p>{{ location }}</p>
+        <p>{{ likes }}
+        <button type="submit">
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+        </button>&emsp;
+        <input type="text" id="like" value="0" size="1"></input>
+        <button type="submit">
+            <span class="glyphicon glyphicon-thumbs-down"></span>
+        </button>
+        <input type="text" id="unlike" value="0" size="1"></input>
+      </p>
     </li>
+    <script>
+    var i = 0;
+    function buttonClicklike() {
+        i++;
+        document.getElementById('like').value = i;
+    }
+    var j = 0;
+    function buttonClickunlike() {
+        j++;
+        document.getElementById('unlike').value = j;
+    }
+    </script>
   {{/events}}
 </ul>
