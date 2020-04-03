@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2015/04/15/01/28/background-723052_1280.jpg');
+}
+</style>
+<img src="https://image.freepik.com/free-vector/lazy-panda-cartoon-sleep-animals_125446-313.jpg"  style="width:500px;height:500px;" align="right">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Team Lazy Developers Website</title>
+  <title>Team LAZY DEVELOPERS Website</title>
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div>
-      <h1>Welcome to Lazy Developers edited application</h1>
+      <h1>Welcome to LAZY DEVELOPER'S application</h1>
     {{{body}}}
 </div>
 <div>
-  <h2>Add an event</h2>
+  <h2>Events</h2>
     <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
-       <br />
-        <input type="submit" name="submit" value="submit" />
+       *Event title: <input name="title" type="text" required/> <br />
+       Event description: <input name="description" type="text" /> <br />
+       *Event location: <input name="location" type="text" required/> <br /> 
+       Link: <a href="https://www2.deloitte.com/content/dam/Deloitte/global/Images/promo_images/gx-deloitte-logo-global.jpg">Deloitte link</a><br />
+       <p>
+        <a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-thumbs-up"></span> Like
+        </a>&emsp;
+        <a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-thumbs-down"></span> Unlike
+        </a>
+      </p>
+    &emsp;&emsp;&emsp;&emsp;<input type="submit" name="submit" value="submit" style="color:white;background-color:black"/>
     </form>
+    
   </div>
 </body>
-</html>
+</html> 
